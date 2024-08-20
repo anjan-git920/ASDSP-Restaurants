@@ -1,0 +1,320 @@
+
+<html>
+<head>
+
+	<title>ASDSP Restaurants</title>
+	<style>
+		*{
+			text-decoration: none;
+		}
+		body{
+			
+         background: linear-gradient(180deg, #423434 0%, #000000 90%);
+
+			padding: 5px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			object-fit: cover;
+		
+		}
+     	.navbar{
+			background: rgb(255, 102, 0);
+             font-family: calibri;
+              padding-right: 15px;
+              padding-left: 15px;
+		}
+		.navdiv{
+			display: flex; 
+            align-items: center;
+             justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px;
+             font-weight: 600; 
+             color: white;
+		}
+		li{
+			list-style: none;
+             display: inline-block;
+		}
+		li a{
+			color: white;
+             font-size: 18px;
+              font-weight: bold;
+               margin-right: 25px;
+		}
+		button{
+			background-color: rgb(83, 4, 4);
+             margin-left: 10px;
+              border-radius: 10px; 
+              padding: 10px; 
+              width: 90px;
+		}
+		button a{
+			color: white;
+             font-weight: bold;
+              font-size: 15px;
+		}
+        .button-header{
+          background-color: beige;
+        }
+      .header{
+        display: flex;
+		padding: 30px;
+      }
+      .box1{
+        background-color: rgb(99, 12, 12);
+		height: 450px;
+		width: 29%;
+		font-size: 50px;
+		overflow: hidden;
+		border-radius: 30px;
+        background-size: 100% 100%;
+	    background-repeat: no-repeat;
+		margin-top: 3rem;
+		margin-right: 10px;
+		margin-left: 10px;
+		border: 7px solid chocolate;
+		box-shadow: 10px;
+		
+      }
+      .box2{
+      background-color: rgb(84, 84, 124);
+	  height: 500px;
+	  width: 45%;
+	  border-radius: 30px;
+     background-size: 100% 100%;
+	  background-repeat: no-repeat;
+	  color: rgb(255, 255, 255);
+	  font-size: 50px;
+	  overflow: hidden;
+	  border: 7px solid chocolate;
+	  display: flex;
+      }
+	  .box2 img{
+		width: 100%;
+		height: 100%;
+	  }
+	  .box1 img{
+		width: 100%;
+		height: 100%;
+	  }
+	  .prop{
+		height: 200px;
+		width: 100%;
+		background-color: blue;
+	  }
+	  .box1, .box2 {
+  position: relative;
+}
+
+.box1 .content, .box2 .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  font-family: sans-serif;
+}
+
+.box1:hover, .box2:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.box1:hover img, .box2:hover img {
+  opacity: 0.5;
+}
+
+.box1:hover .content, .box2:hover .content {
+  opacity: 1;
+  color: white;
+  font-family: sans-serif;
+}
+
+.box1 .content button, .box2 .content button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.9s ease;
+}
+
+.box1 .content button:hover, .box2 .content button:hover {
+  background-color: #e41212;
+}
+.abt{
+	height: 300px;
+ display: flex;
+	
+}
+.abt1,.abt2{
+	width: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+
+}
+.abt1 button, .abt2 button {
+	background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 190px;
+  transition: background-color 0.9s ease;
+  align-self: center; 
+  margin: 0 auto;
+}
+.about {
+
+  height: 400px;
+
+  text-align: left;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  display: flex;
+}
+.about1{
+	width: 80%;
+}
+.about2{
+	width: 20%;
+	background-color: aqua;
+	border-radius: 50%;
+}
+
+
+.about1 p {
+  font-family: sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+}
+.about1 h2 {
+  font-family: sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  color: orange;
+  text-align: left;
+}
+.about2 img{
+width: 100%;
+height: 100%;
+border-radius: 50%;
+border: 10px white solid;
+}
+{ font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer div {
+            margin: 10px;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social a {
+            margin-right: 10px;
+        }
+
+
+	</style>
+</head>
+<body>
+	<div class="bap"></div>
+	<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">ASDSP Restaurants</a> </div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<button><a href="login">Login</a></button>
+			</ul>
+		</div>
+	</nav>
+   <div class="header">
+ <div class="box1">
+	<img src="https://cdn.pixabay.com/video/2024/02/25/201947-916877801_tiny.jpg" alt="" srcset="">
+	<div class="content"><h2>Book your favourite Places</h2>
+		<button>See more</button></div>
+ </div>
+ <div class="box2">
+  <img src="https://s2.best-wallpaper.net/wallpaper/1920x1200/1711/Barbecue-meat-food_1920x1200.jpg" alt="" srcset="">
+<div class="content"><h2>Get Best Foods..in Our Restaurants</h2>
+	<button>See more</button></div> 
+</div>
+ <div class="box1"> <img src="https://assets.cntraveller.in/photos/60ba0f2e8c5b530e121271bd/master/pass/Virat-Kohli-and-Anushka-Sharma-wedding-reception-1366x768.jpg" alt="">
+	<div class="content"><h2>Get Banquets in Great Deal</h2>
+		<button>See more</button></div></div>
+		
+   </div>
+   <div class="abt">
+    <div class="abt1"><h2>"Get your Favourite Places and Favourite food by just one click.."</h2>
+	</div>
+     <div class="abt2"><h2>"Book your Favourite Banquets at best price by just one click..."</h2>
+	</div>
+  </div>
+  <div class="about">
+	<div class="about1"><h2>Welcome to our website</h2><p>We have been serving delightful experiences through the art of cooking for four decades.A cozy, relaxing space combined with flavourful dishes makes it a first choice for every foodie in town. It provides a wide range of items to choose from and lets everyone indulge in an experience of pleasing their taste buds. We provides a wide range of cuisines and dishes to choose from so that every foodie in town has their best experience here.
+		thank-you for visiting. </p></div>
+    <div class="about2"><img src="https://www.baltana.com/files/wallpapers-16/Shrimp-Food-Wallpaper-HD-42082.jpg" alt="" srcset=""></div>
+	</div>
+</div>
+ <footer class="footer">
+        <div class="about-us">
+            <h4>About Us</h4>
+            <p>ASDSP Restaurants is dedicated to connecting food lovers with the best dining experiences.</p>
+        </div>
+        <div class="for-restaurants">
+            <h4>For Restaurants</h4>
+            <ul>
+                <li><a href="#">Join ASDSP</a></li>
+                <li><a href="#">Partner with Us</a></li>
+                <li><a href="#">Advertise</a></li>
+            </ul>
+        </div>
+        <div class="learn-more">
+            <h4>Learn More</h4>
+            <ul>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <h4>Social Links</h4>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://youtube.com" target="_blank">YouTube</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
